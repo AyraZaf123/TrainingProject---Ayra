@@ -24,6 +24,8 @@ public class RobotContainer {
    * CommandXboxController Xbox} class.
    */
   private void configureBindings() {
+    m_driverController.b().whileTrue(m_drivetrain.driveCmd());
+    m_driverController.b().whileTrue(m_drivetrain.waitCmd());
     //YOUR BINDINGS HERE
 
     // Schedule `exampleMethodCommand` when the Xbox controller's B button is pressed,
